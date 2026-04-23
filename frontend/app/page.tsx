@@ -210,7 +210,7 @@ export default function Home() {
                 type="button"
                 onClick={classifyImage}
                 disabled={!hasFile || isClassifying}
-                className="primary-btn"
+                className="primary-btn cursor-pointer"
               >
                 {isClassifying ? "Running inference..." : "Classify image"}
               </button>
@@ -218,7 +218,7 @@ export default function Home() {
                 type="button"
                 onClick={clearSelection}
                 disabled={!hasFile || isClassifying}
-                className="ghost-btn"
+                className="ghost-btn cursor-pointer"
               >
                 Reset
               </button>
